@@ -2,7 +2,8 @@ import PropTypes from "prop-types";
 import { CgDollar } from "react-icons/cg";
 import { BsBook } from "react-icons/bs";
 
-const Course = ({ course: { title, img, description, price, time } }) => {
+const Course = ({ course, handleSelection }) => {
+  const { title, img, description, price, time } = course;
   return (
     <div className="card bg-white rounded-lg">
       <figure className="px-5 pt-5">
@@ -17,7 +18,10 @@ const Course = ({ course: { title, img, description, price, time } }) => {
           <BsBook className="text-2xl" />
           <p className="font-medium text-slate-600">Credit: {time}hr</p>
         </div>
-        <button className="btn btn-block bg-[#2F80ED] text-white hover:text-[#2F80ED] min-h-0 h-10 mt-2">
+        <button
+          onClick={() => handleSelection(course)}
+          className="btn btn-block bg-[#2F80ED] text-white hover:text-[#2F80ED] min-h-0 h-10 mt-2"
+        >
           Select
         </button>
       </div>
@@ -27,6 +31,7 @@ const Course = ({ course: { title, img, description, price, time } }) => {
 
 Course.propTypes = {
   course: PropTypes.object.isRequired,
+  handleSelection: PropTypes.func.isRequired,
 };
 
 export default Course;

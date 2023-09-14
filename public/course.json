@@ -13,7 +13,7 @@
     "title": "Introduction to Algorithms",
     "description": "Dive into the world of algorithms and learn how to solve complex problems efficiently.",
     "price": 34,
-    "time": 10
+    "time": 4
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "title": "Introduction to C++ for DSA",
     "description": "Explore the fundamentals of C++ programming language for Data Structures and Algorithms.",
     "price": 39,
-    "time": 12
+    "time": 5
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "title": "Basic Data Structures",
     "description": "Learn about essential data structures and how to implement them in practical scenarios.",
     "price": 29,
-    "time": 8
+    "time": 3
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "title": "AWS, Cloud Computing",
     "description": "Dive into Amazon Web Services (AWS) and learn about cloud computing solutions and services.",
     "price": 49,
-    "time": 13
+    "time": 9
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "title": "Database (MySQL)",
     "description": "Gain proficiency in MySQL, one of the world's most popular relational database management systems.",
     "price": 34,
-    "time": 9
+    "time": 7
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "title": "Problem-Solving Part",
     "description": "Hone your problem-solving skills through challenging exercises and algorithmic thinking.",
     "price": 24,
-    "time": 6
+    "time": 4
   }
 ]
