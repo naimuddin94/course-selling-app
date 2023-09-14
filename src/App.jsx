@@ -1,8 +1,15 @@
+import Courses from "./components/Courses";
+
 function App() {
   return (
-    <>
-      <h1 className="text-xl text-gray-600 text-center">Hello World!</h1>
-    </>
+    <div className="container mx-auto px-5 md:px-8">
+      <h1 className="text-2xl text-slate-700 font-bold text-center">
+        Course Registration
+      </h1>
+      <div>
+        <Courses />
+      </div>
+    </div>
   );
 }
 

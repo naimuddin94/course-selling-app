@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/vHg9cNj/Rectangle-4.png",
+    "title": "Introduction to C Programming",
+    "description": "Master the basics of C programming language and learn to write efficient and reliable code.",
+    "price": 29,
+    "time": 8
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/zFg7qpb/Rectangle-5.png",
+    "title": "Introduction to Algorithms",
+    "description": "Dive into the world of algorithms and learn how to solve complex problems efficiently.",
+    "price": 34,
+    "time": 10
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/H2kQPPC/Rectangle-6.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Explore the fundamentals of C++ programming language for Data Structures and Algorithms.",
+    "price": 39,
+    "time": 12
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/pXVpJ5D/Rectangle-3.png",
+    "title": "Basic Data Structures",
+    "description": "Learn about essential data structures and how to implement them in practical scenarios.",
+    "price": 29,
+    "time": 8
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/9rrc03J/Rectangle-2.png",
+    "title": "Introduction to OOP Python",
+    "description": "Get a solid understanding of Object-Oriented Programming in Python and its applications.",
+    "price": 24,
+    "time": 6
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/LpkwKXF/Rectangle-7.png",
+    "title": "Software Engineering",
+    "description": "Explore the principles of software engineering and best practices for building robust applications.",
+    "price": 44,
+    "time": 11
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/LSMpNyv/Rectangle-1.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Dive into Amazon Web Services (AWS) and learn about cloud computing solutions and services.",
+    "price": 49,
+    "time": 13
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/RHZ4jMV/Rectangle-8.png",
+    "title": "Database (MySQL)",
+    "description": "Gain proficiency in MySQL, one of the world's most popular relational database management systems.",
+    "price": 34,
+    "time": 9
+  },
+  {
+    "id": 9,
+    "img": "https://i.ibb.co/YPxkHDc/Rectangle-9.png",
+    "title": "Problem-Solving Part",
+    "description": "Hone your problem-solving skills through challenging exercises and algorithmic thinking.",
+    "price": 24,
+    "time": 6
+  }
+]
