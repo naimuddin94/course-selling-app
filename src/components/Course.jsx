@@ -4,14 +4,12 @@ import { BsBook } from "react-icons/bs";
 
 const Course = ({ course: { title, img, description, price, time } }) => {
   return (
-    <div className="card bg-white">
+    <div className="card bg-white rounded-lg">
       <figure className="px-5 pt-5">
-        <img src={img} alt={title + " image."} className="rounded-xl" />
+        <img src={img} alt={title + " image."} className="rounded-lg" />
       </figure>
       <div className="card-body p-5 items-center text-center">
-        <h2 className="card-title text-base text-slate-800">
-          {title}
-        </h2>
+        <h2 className="card-title text-base text-slate-800">{title}</h2>
         <p className="text-xs text-slate-500">{description}</p>
         <div className="flex items-center gap-3">
           <CgDollar className="text-2xl" />
