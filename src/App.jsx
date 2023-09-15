@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Courses from "./components/Courses";
 import Selection from "./components/Selection";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [selectionList, setSelectionList] = useState([]);
@@ -11,10 +13,10 @@ function App() {
   const handleSelection = (course) => {
     const selected = selectionList.find((sCourse) => sCourse.id === course.id);
     if (selected) {
-      return alert("Course already selected");
+      return toast.error("Course already selected");
     } else {
       if (remainingTime < course.time) {
-        return alert("You have no enough time");
+        return toast.warn("You have no enough time");
       }
       setTotalTime(totalTime + course.time);
       setRemainingTime(remainingTime - course.time);
@@ -26,7 +28,19 @@ function App() {
   console.log(totalTime, remainingTime);
 
   return (
-    <div className="container mx-auto px-5 md:px-8">
+    <div className="max-w-7xl mx-auto px-5 md:px-8">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <h1 className="text-2xl text-slate-700 font-bold text-center py-3">
         Course Registration
       </h1>

@@ -10,7 +10,7 @@ const Courses = ({ handleSelection }) => {
       .then((data) => setCourses(data));
   }, []);
   return (
-    <div className="col-span-9 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    <div className="col-span-9 grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       {courses &&
         courses.map((course) => (
           <Course
