@@ -11,7 +11,7 @@ This is a course selling application with react js.
 
 ## FAQ
 
-#### How I managed the state in my assignment project.
+#### How I managed the state in my assignment project?
 
 My application has 5 states. Taking a state named Courses to fetch all the course data. And there is a state named selectionList to keep the user's course selected. Since these two states will have a list of courses, its initial value is empty array. And there more states are declared to hold the remaining-time, total-time, total-price, of the application.
 

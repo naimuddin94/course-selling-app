@@ -16,7 +16,7 @@ function App() {
       return toast.error("Course already selected");
     } else {
       if (remainingTime < course.time) {
-        return toast.warn("You have no enough time");
+        return toast.warn("You have no Credit Hour");
       }
       setTotalTime(totalTime + course.time);
       setRemainingTime(remainingTime - course.time);

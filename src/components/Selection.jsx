@@ -9,7 +9,7 @@ const Selection = ({
   handleRemoveCourse,
 }) => {
   return (
-    <div className="col-span-3">
+    <div className="col-span-3 max-w-xs mx-auto">
       <div className="bg-white px-4 py-6 rounded-lg">
         <h2 className="font-bold text-base text-[#2F80ED] py-2">
           Credit Hour Remaining {remainingTime} hr
@@ -29,7 +29,7 @@ const Selection = ({
                 </p>
                 <CgCloseR
                   onClick={() => handleRemoveCourse(course)}
-                  className="cursor-pointer hover:text-rose-600 hover:scale-110 duration-200"
+                  className="flex-shrink-0 cursor-pointer hover:text-rose-600 hover:scale-110 duration-200"
                 />
               </div>
             ))}
