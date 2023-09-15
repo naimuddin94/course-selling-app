@@ -7,10 +7,12 @@ const Course = ({ course, handleSelection }) => {
   return (
     <div className="card bg-white rounded-lg shadow-sm hover:shadow-md duration-200">
       <figure className="px-5 pt-5">
-        <img src={img} alt={title + " image."} className="rounded-lg" />
+        <img src={img} alt={title + " image."} className="rounded-lg w-full" />
       </figure>
       <div className="card-body p-5 items-start">
-        <h2 className="card-title text-base text-left text-slate-800">{title}</h2>
+        <h2 className="card-title text-base text-left text-slate-800">
+          {title}
+        </h2>
         <p className="text-xs text-slate-500">{description}</p>
         <div className="flex items-center gap-3">
           <CgDollar className="text-xl text-slate-700" />
