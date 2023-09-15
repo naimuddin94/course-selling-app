@@ -22,7 +22,7 @@ const Course = ({ course, handleSelection }) => {
         </div>
         <button
           onClick={() => handleSelection(course)}
-          className="btn btn-block bg-[#2F80ED] text-white hover:text-[#2F80ED] min-h-0 h-10 mt-2 normal-case"
+          className="btn btn-block bg-[#2F80ED] text-white hover:text-slate-700 min-h-0 h-10 mt-2 normal-case"
         >
           Select
         </button>
