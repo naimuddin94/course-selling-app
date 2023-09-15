@@ -1,9 +1,16 @@
 import PropTypes from "prop-types";
+import { CgCloseR } from "react-icons/cg";
 
-const Selection = ({ selectionList, remainingTime, totalTime, totalPrice }) => {
+const Selection = ({
+  selectionList,
+  remainingTime,
+  totalTime,
+  totalPrice,
+  handleRemoveCourse,
+}) => {
   return (
     <div className="col-span-3">
-      <div className="bg-white px-5 py-6 rounded-lg">
+      <div className="bg-white px-4 py-6 rounded-lg">
         <h2 className="font-bold text-base text-[#2F80ED] py-2">
           Credit Hour Remaining {remainingTime} hr
         </h2>
@@ -12,10 +19,19 @@ const Selection = ({ selectionList, remainingTime, totalTime, totalPrice }) => {
         <div className="py-2">
           {selectionList &&
             selectionList.map((course, index) => (
-              <p key={index} className="py-1 text-[0.95rem]">
-                <span className="font-semibold">{index + 1}.</span>{" "}
-                {course.title}
-              </p>
+              <div
+                key={index}
+                className="flex gap-2 items-center justify-between"
+              >
+                <p className="py-1 text-sm cursor-pointer">
+                  <span className="font-semibold">{index + 1}.</span>{" "}
+                  {course.title}
+                </p>
+                <CgCloseR
+                  onClick={() => handleRemoveCourse(course)}
+                  className="cursor-pointer hover:text-rose-600 hover:scale-110 duration-200"
+                />
+              </div>
             ))}
         </div>
         <hr />
@@ -36,6 +52,7 @@ Selection.propTypes = {
   remainingTime: PropTypes.number.isRequired,
   totalTime: PropTypes.number.isRequired,
   totalPrice: PropTypes.number.isRequired,
+  handleRemoveCourse: PropTypes.func.isRequired,
 };
 
 export default Selection;
