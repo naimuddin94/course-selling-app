@@ -16,7 +16,7 @@ function App() {
       return toast.error("Course already selected");
     } else {
       if (remainingTime < course.time) {
-        return toast.warn("You have no Credit Hour");
+        return toast.warn("You have no credit hour");
       }
       setTotalTime(totalTime + course.time);
       setRemainingTime(remainingTime - course.time);
@@ -50,7 +50,7 @@ function App() {
         theme="colored"
         transition={Slide}
       />
-      <h1 className="text-2xl text-slate-700 font-bold text-center py-3">
+      <h1 className="text-2xl text-slate-700 font-bold text-center pt-6">
         Course Registration
       </h1>
       <div className="md:grid grid-cols-12 gap-4 mt-5">

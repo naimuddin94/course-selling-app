@@ -9,13 +9,13 @@ const Selection = ({
   handleRemoveCourse,
 }) => {
   return (
-    <div className="col-span-3 max-w-xs mx-auto">
-      <div className="bg-white px-4 py-6 rounded-lg">
+    <div className="col-span-3 max-w-sm mx-auto">
+      <div className="bg-white px-4 py-6 rounded-lg shadow-sm">
         <h2 className="font-bold text-base text-[#2F80ED] py-2">
           Credit Hour Remaining {remainingTime} hr
         </h2>
         <hr />
-        <h1 className="font-bold text-lg text-slate-800 py-2">Course Name</h1>
+        <h1 className="font-bold text-lg text-slate-700 py-2">Course Name</h1>
         <div className="py-2">
           {selectionList &&
             selectionList.map((course, index) => (
@@ -24,7 +24,7 @@ const Selection = ({
                 className="flex gap-2 items-center justify-between"
               >
                 <p className="py-1 text-sm cursor-pointer">
-                  <span className="font-semibold">{index + 1}.</span>{" "}
+                  <span className="font-semibold">{index + 1}</span>{" "}
                   {course.title}
                 </p>
                 <CgCloseR

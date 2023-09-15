@@ -5,22 +5,22 @@ import { BsBook } from "react-icons/bs";
 const Course = ({ course, handleSelection }) => {
   const { title, img, description, price, time } = course;
   return (
-    <div className="card bg-white rounded-lg">
+    <div className="card bg-white rounded-lg shadow-sm hover:shadow-md duration-200">
       <figure className="px-5 pt-5">
         <img src={img} alt={title + " image."} className="rounded-lg" />
       </figure>
-      <div className="card-body p-5 items-center text-center">
-        <h2 className="card-title text-base text-slate-800">{title}</h2>
+      <div className="card-body p-5 items-start">
+        <h2 className="card-title text-base text-left text-slate-800">{title}</h2>
         <p className="text-xs text-slate-500">{description}</p>
         <div className="flex items-center gap-3">
-          <CgDollar className="text-2xl" />
-          <p className="font-medium text-slate-600">Price: {price}</p>
-          <BsBook className="text-2xl" />
-          <p className="font-medium text-slate-600">Credit: {time}hr</p>
+          <CgDollar className="text-xl text-slate-700" />
+          <p className="font-medium text-slate-500">Price: {price}</p>
+          <BsBook className="text-xl text-slate-700" />
+          <p className="font-medium text-slate-500">Credit: {time}hr</p>
         </div>
         <button
           onClick={() => handleSelection(course)}
-          className="btn btn-block bg-[#2F80ED] text-white hover:text-[#2F80ED] min-h-0 h-10 mt-2"
+          className="btn btn-block bg-[#2F80ED] text-white hover:text-[#2F80ED] min-h-0 h-10 mt-2 normal-case"
         >
           Select
         </button>
